@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		const counterApp = {
+			count : 0,
+			increment : function(count) {
+				this.count = this.count + 1;
+				document.querySelector('.count').innerHTML = this.count;
+			},
+			decrement : function(count) {
+				this.count = this.count - 1;
+			}
+		}
+		</script>
+	<div id="counter-app">
+		<span class="count">1</span>
+		<button type="button" class="increment">올림</button>
+		<button type="button" class="decrement">내림</but>
+		<button type="button" class="reset"></button>
+	</div>
+	<!-- <script src="./js/counter.js"></script> -->
+
+
+</body>
+</html>
